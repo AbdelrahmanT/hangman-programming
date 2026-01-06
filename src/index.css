@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: #D9D9D9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  text-align: center;
+}
+
+header > h1{
+  color: #F9F4DA;
+}
+
+header > p {
+  color: #8E8E8E;
+}
+
+.gameStatus{
+  background-color: #7A5EA7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #F9F4DA;
+  border-radius: 9px;
+  width: 360px;
+  height: 60px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  gap: 10px;
+  
+}
+
+.gameStatus h1{
+  font-weight: lighter;
+}
+
+.gameStatus > *{
+  margin: 0;
+}
+
+.gameStatus.won{
+  background-color: #10A95B;
+}
+
+.gameStatus.lost{
+  background-color: #BA2A2A;
+}
+
+
+.languages{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 360px;
+  margin-top: 40px;
+}
+
+.language{
+  padding: 5px;
+  border-radius: 5px;
+  margin: 1.5px;
+}
+
+.language.dead {
+  position: relative; 
+}
+
+.language.dead::before{
+  content: "💀" !important;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 102%;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6); 
+}
+
+
+.word{
+  width: 360px;
+  gap: 2px;
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.letter{
+  width: 40px;
+  height: 40px;
+  background-color: #323232 ;
+  border-bottom: solid #F9F4DA ;
+  text-align: center;
+  padding-top: 10px;
+  
+}
+
+.letter.wrong{
+  color: #EC5D49;
+}
+
+
+.keyboard{
+  width: 480px ;
+  height: 170px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.key{
+  width: 40px;
+  height: 40px;
+  background-color: #FCBA29;
+  border: solid 1px #D7D7D7;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.key.correct{
+  background-color: #10A95B;
+}
+
+.key.wrong{
+  background-color: #EC5D49;
+}
+
