@@ -1,8 +1,5 @@
-# React + Vite
+# Hangman programming edition
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The classic hangman game but you destroy programming languages with each mistake!
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+netlify deployment link : https://695fc314bcbf60b32c1a33d8--hangman67.netlify.app/
