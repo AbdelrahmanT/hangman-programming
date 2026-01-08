@@ -1,7 +1,7 @@
 import { useState , useRef } from 'react'
 import { languages } from './languages';
 import {words} from './words';
-import GameStatus from './gameStatus';
+import GameStatus from './GameStatus';
 /*
 TODO:
 no messages appears when the user guesses everything correctly on first try
